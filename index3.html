@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ONET-Competencies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" type="text/css" href="charts.css">
+  <!-- link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" -->
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script src="//code.highcharts.com/highcharts.js" type="text/javascript"></script>
+  <script src="//code.highcharts.com/highcharts-more.js"></script>
+  <script src="charts3.js" type="text/javascript"></script>
+  <!-- script src="//code.highcharts.com/highcharts-more.js" type="text/javascript"></script -->
+</head>
+<div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Earnings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index2.html">Occupations</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Employment<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="method.html">Methodology</a>
+      </li>
+    </ul>
+  </nav>
+  <h2>ONET Competencies</h2>
+  <hr>
+  <div class="row">
+    <div class="list-group list-head">
+      <li class ="bg-info text-dark list-title">Domain</li>
+      <li class="list-group-item active" data-toggle="list"><a class="domain-list">Abilities</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="domain-list">Knowledge</a>
+      <li class="list-group-item" data-toggle="list"><a class="domain-list">Skills</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="domain-list">Work activities</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="domain-list">Work context</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="domain-list">Work styles</a></li>
+    </div>
+    <div class="list-group list-head">
+      <li class ="bg-info text-dark list-title">Competency</li>
+      <div id="dmenu" class="border-1"></div>
+    </div>
+    <div class="list-group list-head">
+      <li class ="bg-info text-dark list-title">Occupations</li>
+      <li class="list-group-item active" data-toggle="list"><a class="occ-list">Management</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Business and financial operations</a>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Computer and mathematical</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Architecture and engineering</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Life, physical, and social sciences</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Community and social service</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Legal</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Education, training, and library</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Arts, design, entertainment, sports, and media</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Healthcare practitioners and technical</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Healthcare support</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Food preparation and serving related</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Protective service</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Building and grounds cleaning and maintenance</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Personal care and service</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Sales and related</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Office and administrative support</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Farming, fisheries, and forestry</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Construction and extraction</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Installation, maintenance and repair</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Production</a></li>
+      <li class="list-group-item" data-toggle="list"><a class="occ-list">Transportation and material moving</a></li>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="hcharts5"></div>
+    </div>
+  </div>
+  <div class="notes">
+    Job Zone 1 - occupations that need little or no preparation<br>
+    Job Zone 2 - occupations that need some preparation<br>
+    Job Zone 3 - occupations that need medium preparation<br>
+    Job Zone 4 - occupations that need considerable preparation<br>
+    Job Zone 5 - occupations that need extensive preparation<br>
+</div>
+  <!-- <div id="legend" class="col-md-12">
+    <div class="row">
+      <svg width="800" height="20">
+        <circle cx="5" cy="5" r="5" fill="#E8D4F7" /><text y="10" x="15">Job zone 1</text>
+        <circle cx="105" cy="5" r="5" fill="#700CBC" /><text y="10" x="115">Job zone 2</text>
+        <circle cx="205" cy="5" r="5" fill="#FDED2A" /><text y="10" x="215">Job zone 3</text>
+        <circle cx="305" cy="5" r="5" fill="#B8AA14" /><text y="10" x="315">Job zone 4</text>
+        <circle cx="405" cy="5" r="5" fill="#343009" /><text y="10" x="415">Job zone 5</text>
+      </svg>
+    </div>
+  </div> -->
+
+</div>
+</html>

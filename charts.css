@@ -1,0 +1,46 @@
+#dmenu {
+  width: 300px;
+}
+.d-element {
+  /* border-left: 6px solid #75ABDC;
+  padding-left: 5px; */
+}
+#hcharts1, #hcharts5 {
+  height: 800px;
+}
+#hcharts2, #hcharts3 {
+  height: 400px;
+}
+#hcharts4 {
+  height: 800px;
+  width: 1200px;
+  /* overflow: scroll; */
+}
+.list-head {
+  height: 120px;
+  overflow-y: scroll;
+}
+.list-title {
+  padding: 5px;
+  font-weight: bold;
+  list-style-type: none;
+}
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 5px;
+  margin-top: 20px;
+  padding-top: 1%;
+}
+.list-group-item {
+  /*background-color: rgb(248, 249, 250);*/
+  background-color: #edeff1;
+  color:#696969;
+  border: none;
+  font-family: 'Open Sans';
+  border-radius: 0;
+  font-weight: normal;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
